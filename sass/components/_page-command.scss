@@ -1,0 +1,128 @@
+
+.command {
+    background-color: #f5f4fa;
+
+    .command-main-title {
+    padding-top: 94px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 480px) {
+      padding-top: 60px;
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.18;
+    }
+  }
+
+
+   .command-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+
+
+    @media screen and (min-width: 480px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .command-list-item {
+    max-width: 270px;
+
+    @media screen and (min-width: 480px) {
+
+      max-width: 450px;
+
+      &:not(:last-child){
+        margin-bottom: 30px;
+
+      }
+    }
+  }
+
+  }
+  
+  .container-profession{
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-top: 30px;
+
+    .command-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+    .command-profession {
+    display: flex;
+    justify-content: center;
+  }
+
+  }
+  
+  .command-title,
+  .command-profession {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+  }
+
+  .command-profession {
+    font-weight: 400;
+    color: var(--grey-color);
+  }
+ 
+  
+  .container-icon{
+    padding-top: 16px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+      padding-bottom: 24px;
+    }
+  }
+    
+  .command-list-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    transition: var(--time-fill);
+  }
+
+   .command-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #afb1b8;
+    background-color: var(--white-color);
+    transition: var(--time-background);
+  }
+
+  .command-list-icon-item{
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+
+    .command-list-link{
+
+      &:hover,
+      &:focus{
+        background-color: var(--blue-color);
+
+      .command-list-icon{
+        fill: var(--white-color);
+      }
+      }
+    }
+  }
+  

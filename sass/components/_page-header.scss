@@ -1,0 +1,276 @@
+                     // !-=====================MOBILE VERSION====================-!
+
+
+ @media screen and (min-width: 480px) {
+
+ .menu-button{
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-menu-mobile{
+  display: none;
+
+  &:hover,
+  &:focus{
+    fill: var(--blue-color);
+  }
+  }
+
+.menu-button.is-open .icon-menu-mobile{
+  display: block;
+}
+
+.icon-menu-mobile{
+
+  &:hover,
+  &:focus{
+    fill: var(--blue-color);
+  }
+}
+
+.menu-button.is-open .icon-close-mobile{
+  display: none;
+}
+
+.icon-close-mobile{
+
+  &:hover,
+  &:focus{
+    fill: var(--blue-color);
+  }
+}
+
+.menu-container{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: green;
+  max-height: 393px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+
+  &.is-open{
+    display: block;
+  }
+}
+ 
+
+
+  .header{
+
+        border-bottom: 1px solid #ececec;
+        height: 80px;
+
+  @media screen and (min-width: 480px) {
+
+          height: 60px;
+          position: relative;
+        }
+  }
+
+.navigation{
+
+  display: flex;
+  align-items: center;
+
+  @media screen and(min-width: 480px) {
+
+       justify-content: space-between;
+       min-height: 60px;
+  }
+}
+
+  
+.logo {
+      margin-right: 93px;
+      color: var(--black-color);
+      
+  }
+
+   .logo-header{
+    color: var(--blue-color);
+  }
+
+}
+
+.navigation{
+
+  .navigation-list, .navigation-list-information {
+    display: flex;
+    align-items: center;
+    
+    @media screen and(min-width: 480px) {
+      justify-content: center;
+      flex-direction: column;
+    }
+}
+
+.navigation-list-item{
+    display: flex;
+    flex: wrap;
+    
+  
+  &:not(:last-child){
+      margin-right: 50px;
+  }
+
+  @media screen and(min-width: 480px) {
+
+    &:not(:last-child)  {
+
+      margin-bottom: 50px;
+      margin-right: 0px;
+  }
+
+  &:last-child {
+    margin-bottom: 60px;
+}
+
+  &:first-child {
+     margin-top: 60px;
+}
+  }
+  
+}
+
+.navigation-list-information {
+  margin-left: 305px;
+
+  @media screen and(min-width: 480px){
+    margin-left: 0px;
+  }
+}
+
+.navigation-list-link{
+
+  transition: var(--time-color);
+
+  &:hover, &:focus{
+    color: var(--blue-color);
+  }
+
+}
+
+.blue-border{
+
+  position: relative;
+  display: inline-block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  height: 80px;
+  
+  &:after{
+  position: absolute;
+  display: inline-block;
+  content: '';
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--blue-color);
+  }
+
+  @media screen and(min-width: 480px) {
+  padding: 0px;
+  height: 33px;
+}
+}
+
+
+.navigation-list-information{
+
+  .header-mail, .header-tel{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  fill: var(--grey-color);
+  transition: var(--time-color);
+
+  .logo-link{
+    margin-right: 10px;
+    transition: var(--time-fill);
+  }
+}
+}
+  
+.header-tel, .header-mail {
+
+  &:hover, &:focus{
+    color: var(--blue-color);
+    
+    .logo-link{
+        fill: var(--blue-color)
+    }
+  }
+}
+
+.header-mail{
+  margin-right: 30px;
+
+  @media screen and(min-width: 480px){
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+.logo-header,
+.logo,
+.logo-footer {
+  font-family: var(--logo-text);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.navigation .logo{
+  color: var(--black-color);
+}
+
+.navigation .logo-header{
+  color: var(--blue-color);
+}
+
+.navigation-list-link,
+.header-mail,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.navigation-list-link,
+.header-mail,
+.address-list-link {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+
+.header-tel,
+.header-mail {
+  color: var(--grey-color);
+  text-decoration: none;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+}
+
+
+
+
+
+
+
+

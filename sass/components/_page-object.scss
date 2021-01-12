@@ -1,0 +1,73 @@
+    .object-list {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    @media screen and (min-width: 480px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .container-object{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px; 
+  
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  }
+}
+
+  .margin:not(:last-child) {
+    margin-right: 30px;
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 30px;
+      margin-right: 0px
+    }
+  }
+  
+  .object-list-title {
+    margin-bottom: 10px;
+  }
+  
+  .object-list-title, .lessons-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black-color);
+  }
+
+  .object-list-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    width: 270px;
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+  }
+  
+  @media screen and (min-width: 480px) {
+
+    .object-list-title, .object-list-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
