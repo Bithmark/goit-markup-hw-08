@@ -5,28 +5,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 94px;
+    padding-top: 60px;
   }
 
    .company-clients-list{
-      padding-bottom: 94px;
-      padding-top: 50px;
+      padding-bottom: 60px;
+      padding-top: 30px;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
   }
 }
 
-.company-item{
-    &:not(:last-child){
-        margin-right: 30px; 
-    }  
-}
   
 .company-item{
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 30px;
+    
+
+
     .company-link{
       display: block;
-      width: 170px;
+      width: 210px;
       height: 90px;
       display: flex;
       justify-content: center;
