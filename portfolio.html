@@ -16,17 +16,28 @@
 
 <body>
     <!--Шапка-->
-    <header class="header">
-        <div class="container">
-            <nav class="navigation">
-                <a href="index.html" class="logo"><span class="logo-header">Web</span>Studio</a>
+<header class="header">
+    <div class="container ">
+
+        <nav class="navigation">
+            <a href="#" class="logo logo-black"><span class="logo-header">Web</span>Studio</a>
+
+            <!-- MOBILE -->
+            <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <svg width=" 40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu-mobile" href="./images/sprite.svg#icon-menu_mobile"></use>
+                    <use class="icon-close-mobile" href="./images/sprite.svg#icon-close_mobile"></use>
+                </svg>
+            </button>
+            
+            <div class="menu-container" id="menu-container is-open" data-menu>
 
                 <ul class="navigation-list">
                     <li class="navigation-list-item">
-                        <a href="index.html" class="navigation-list-link">Студия</a>
+                        <a href="index.html" class="navigation-list-link ">Студия</a>
                     </li>
                     <li class="navigation-list-item">
-                        <a href="" class="navigation-list-link blue-border">Портфолио</a>
+                        <a href="portfolio.html" class="navigation-list-link blue-border">Портфолио</a>
                     </li>
                     <li class="navigation-list-item">
                         <a href="" class="navigation-list-link">Контакты</a>
@@ -35,29 +46,31 @@
 
                 <ul class="navigation-list-information">
                     <li class="navigation-list-item-link">
-                        <!-- <div class="container-mail"> -->
-                        <a href="mailto:info@devstudio.com" class="header-mail">info@devstudio.com
-                            <svg class="logo-link" width="16px" height="12px">
-                                <use href="./images/sprite.svg#icon-mail"></use>
-                            </svg>
-                        </a>
-                        <!-- </div> -->
+                        <div class="container-mail">
+                            <a href="mailto:info@devstudio.com" class="header-mail">info@devstudio.com
+                                <svg class="logo-link" width=16px height=12px>
+                                    <use href="./images/sprite.svg#icon-mail"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
 
                     <li class="navigation-list-item">
-                        <!-- <div class="container-telefon"> -->
-
-                        <a href="tel:+380961111111" class="header-tel">+38 096 111 11 11
-                            <svg class="logo-link" width="10px" height="16px">
-                                <use href="./images/sprite.svg#icon-telefon"></use>
-                            </svg>
-                        </a>
-                        <!-- </div> -->
+                        <div class="container-telefon">
+                            <a href="tel:+380961111111" class="header-tel">+38 096 111 11 11
+                                <svg class="logo-link" width=10px height=16px>
+                                    <use href="./images/sprite.svg#icon-telefon"></use>
+                                </svg>
+                            </a>
                     </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            </div>
+            </ul>
+    </div>
+
+    </nav>
+    </div>
+
+</header>
 
     <main>
         <!-- Кнопки -->
@@ -94,8 +107,15 @@
                     <li class="poster-list-item">
                         <a href="#" class="poster-link">
                             <div class="poster-list-item-img-wrapper">
-                                <img class="poster-image" src="./images/file-1.jpg" alt="Ноутбук с людьми" width="370"
-                                    height="294" />
+                        <picture class="command__list-picture">
+                            <!-- <source srcset="./images/about/about-img-desktop-01.jpg 1x, ./images/about/about-img-desktop-01@2x.jpg 2x"
+                                media="(min-width: 1200px)">  -->
+                            <source srcset="./images/portfolio-mobile-1.jpg 1x, ./images/portfolio-mobile-1@2x 2x"
+                                media="(min-width: 768px)">
+                            <img class="about__list-img" src="./images/portfolio-mobile-1.jpg" alt="ноутбук с людьми" />
+                        </picture>
+                                <!-- <img class="poster-image" src="./images/file-1.jpg" alt="Ноутбук с людьми" width="370"
+                                    height="294" /> -->
                                 <p class="poster-overlay">
                                     Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для
@@ -110,8 +130,15 @@
                     <li class="poster-list-item">
                         <a href="#" class="poster-link">
                             <div class="poster-list-item-img-wrapper">
-                                <img class="poster-image" src="./images/file-2.jpg" alt="Ноутбук с людьми" width="370"
-                                    height="294" />
+                        <picture class="command__list-picture">
+                            <!-- <source srcset="./images/about/about-img-desktop-01.jpg 1x, ./images/about/about-img-desktop-01@2x.jpg 2x"
+                                media="(min-width: 1200px)">  -->
+                            <source srcset="./images/portfolio-mobile-2.jpg 1x, ./images/portfolio-mobile-2@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="about__list-img" src="./images/portfolio-mobile-2.jpg" alt="ноутбук с людьми" />
+                        </picture>                                
+                                <!-- <img class="poster-image" src="./images/file-2.jpg" alt="Ноутбук с людьми" width="370"
+                                    height="294" /> -->
                                 <p class="poster-overlay">
                                     Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для
@@ -125,8 +152,15 @@
                     <li class="poster-list-item">
                         <a href="#" class="poster-link">
                             <div class="poster-list-item-img-wrapper">
-                                <img class="poster-image" src="./images/file-3.jpg" alt="Ноутбук с людьми" width="370"
-                                    height="294" />
+                         <picture class="command__list-picture">
+                            <!-- <source srcset="./images/about/about-img-desktop-01.jpg 1x, ./images/about/about-img-desktop-01@2x.jpg 2x"
+                                media="(min-width: 1200px)">  -->
+                            <source srcset="./images/portfolio-mobile-3.jpg 1x, ./images/portfolio-mobile-3@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="about__list-img" src="./images/portfolio-mobile-3.jpg" alt="ноутбук с людьми" />
+                        </picture>                                  
+                                <!-- <img class="poster-image" src="./images/file-3.jpg" alt="Ноутбук с людьми" width="370"
+                                    height="294" /> -->
                                 <p class="poster-overlay">
                                     Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для
@@ -140,8 +174,15 @@
                     <li class="poster-list-item">
                         <a href="#" class="poster-link">
                             <div class="poster-list-item-img-wrapper">
-                                <img class="poster-image" src="./images/file-4.jpg" alt="Ноутбук с людьми" width="370"
-                                    height="294" />
+                         <picture class="command__list-picture">
+                            <!-- <source srcset="./images/about/about-img-desktop-01.jpg 1x, ./images/about/about-img-desktop-01@2x.jpg 2x"
+                                media="(min-width: 1200px)">  -->
+                            <source srcset="./images/portfolio-mobile-4.jpg 1x, ./images/portfolio-mobile-4@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="about__list-img" src="./images/portfolio-mobile-4.jpg" alt="ноутбук с людьми" />
+                        </picture>                                  
+                                <!-- <img class="poster-image" src="./images/file-4.jpg" alt="Ноутбук с людьми" width="370"
+                                    height="294" /> -->
                                 <p class="poster-overlay">
                                     Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для
@@ -155,8 +196,15 @@
                     <li class="poster-list-item">
                         <a href="#" class="poster-link">
                             <div class="poster-list-item-img-wrapper">
-                                <img class="poster-image" src="./images/file-5.jpg" alt="Ноутбук с людьми" width="370"
-                                    height="294" />
+                         <picture class="command__list-picture">
+                            <!-- <source srcset="./images/about/about-img-desktop-01.jpg 1x, ./images/about/about-img-desktop-01@2x.jpg 2x"
+                                media="(min-width: 1200px)">  -->
+                            <source srcset="./images/portfolio-mobile-5.jpg 1x, ./images/portfolio-mobile-5@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="about__list-img" src="./images/portfolio-mobile-5.jpg" alt="ноутбук с людьми" />
+                        </picture>                                  
+                                <!-- <img class="poster-image" src="./images/file-5.jpg" alt="Ноутбук с людьми" width="370"
+                                    height="294" /> -->
                                 <p class="poster-overlay">
                                     Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для
@@ -170,8 +218,15 @@
                     <li class="poster-list-item">
                         <a href="#" class="poster-link">
                             <div class="poster-list-item-img-wrapper">
-                                <img class="poster-image" src="./images/file-6.jpg" alt="Ноутбук с людьми" width="370"
-                                    height="294" />
+                         <picture class="command__list-picture">
+                            <!-- <source srcset="./images/about/about-img-desktop-01.jpg 1x, ./images/about/about-img-desktop-01@2x.jpg 2x"
+                                media="(min-width: 1200px)">  -->
+                            <source srcset="./images/portfolio-mobile-6.jpg 1x, ./images/portfolio-mobile-6@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="about__list-img" src="./images/portfolio-mobile-6.jpg" alt="ноутбук с людьми" />
+                        </picture>                                  
+                                <!-- <img class="poster-image" src="./images/file-6.jpg" alt="Ноутбук с людьми" width="370"
+                                    height="294" /> -->
                                 <p class="poster-overlay">
                                     Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для
@@ -187,8 +242,15 @@
                     <li class="poster-list-item">
                         <a href="#" class="poster-link">
                             <div class="poster-list-item-img-wrapper">
-                                <img class="poster-image" src="./images/file-7.jpg" alt="Ноутбук с людьми" width="370"
-                                    height="294" />
+                         <picture class="command__list-picture">
+                            <!-- <source srcset="./images/about/about-img-desktop-01.jpg 1x, ./images/about/about-img-desktop-01@2x.jpg 2x"
+                                media="(min-width: 1200px)">  -->
+                            <source srcset="./images/portfolio-mobile-7.jpg 1x, ./images/portfolio-mobile-7@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="about__list-img" src="./images/portfolio-mobile-7.jpg" alt="ноутбук с людьми" />
+                        </picture>                                  
+                                <!-- <img class="poster-image" src="./images/file-7.jpg" alt="Ноутбук с людьми" width="370"
+                                    height="294" /> -->
                                 <p class="poster-overlay">
                                     Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для
@@ -202,8 +264,16 @@
                     <li class="poster-list-item">
                         <a href="#" class="poster-link">
                             <div class="poster-list-item-img-wrapper">
-                                <img class="poster-image" src="./images/file-8.jpg" alt="Ноутбук с людьми" width="370"
-                                    height="294" />
+                         <picture class="command__list-picture">
+                            <!-- <source srcset="./images/about/about-img-desktop-01.jpg 1x, ./images/about/about-img-desktop-01@2x.jpg 2x"
+                                media="(min-width: 1200px)">  -->
+                            <source srcset="./images/portfolio-mobile-8.jpg 1x, ./images/portfolio-mobile-8@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="about__list-img" src="./images/portfolio-mobile-8.jpg" alt="ноутбук с людьми" />
+                        </picture>  
+
+                                <!-- <img class="poster-image" src="./images/file-8.jpg" alt="Ноутбук с людьми" width="370"
+                                    height="294" /> -->
                                 <p class="poster-overlay">
                                     Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для
@@ -217,8 +287,15 @@
                     <li class="poster-list-item">
                         <a href="#" class="poster-link">
                             <div class="poster-list-item-img-wrapper">
-                                <img class="poster-image" src="./images/file-9.jpg" alt="Ноутбук с людьми" width="370"
-                                    height="294" />
+                         <picture class="command__list-picture">
+                            <!-- <source srcset="./images/about/about-img-desktop-01.jpg 1x, ./images/about/about-img-desktop-01@2x.jpg 2x"
+                                media="(min-width: 1200px)">  -->
+                            <source srcset="./images/portfolio-mobile-9.jpg 1x, ./images/portfolio-mobile-9@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="about__list-img" src="./images/portfolio-mobile-9.jpg" alt="ноутбук с людьми" />
+                        </picture>                                  
+                                <!-- <img class="poster-image" src="./images/file-9.jpg" alt="Ноутбук с людьми" width="370"
+                                    height="294" /> -->
                                 <p class="poster-overlay">
                                     Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для
@@ -231,11 +308,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
-    </main>
+        </section> -->
+        </main>
 
     <!--Футер-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="container-primary">
                 <a href="#" class="logo-footer"><span class="logo">Web</span>Studio</a>
@@ -316,7 +393,11 @@
             </div>
 
         </div>
-    </footer>
+    </footer> -->
+    
+    
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
