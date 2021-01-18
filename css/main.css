@@ -89,7 +89,54 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .blue-border {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 32px;
+    height: 33px;
+  }
+  .blue-border:after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--blue-color);
+  }
+  .logo-link {
+    margin-right: 10px;
+  }
+  .navigation-list-information .header-mail, .navigation-list-information .header-tel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    fill: var(--grey-color);
+    -webkit-transition: var(--time-color);
+    transition: var(--time-color);
+  }
+  .navigation-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .navigation-list-information {
+    display: inline-block;
+  }
+  .header-mail {
+    margin-bottom: 16px;
+  }
   .header .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -188,10 +235,6 @@ a {
   }
 }
 
-.menu-button {
-  display: none;
-}
-
 .logo-header {
   color: var(--blue-color);
 }
@@ -215,11 +258,31 @@ a {
   display: inline-block;
 }
 
+@media screen and (max-width: 767px) {
+  .navigation-list-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    display: inline-block;
+  }
+}
+
 .header-mail, .header-tel {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 767px) {
+  .header-mail, .header-tel {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    display: inline-block;
+  }
 }
 
 .navigation-list-link {
@@ -255,6 +318,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
   .header {
     height: 80px;
     border-bottom: 1px solid #ececec;
