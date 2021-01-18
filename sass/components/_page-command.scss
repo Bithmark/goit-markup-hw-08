@@ -130,3 +130,28 @@
   }
 
 }
+
+
+@media screen and(min-width:1200px) {
+
+  .command .container {
+    padding-bottom: 94px;
+  }
+
+   .command .command-main-title {
+     margin-bottom: 50px;
+     padding-top: 94px;
+   }
+
+  .command-list-item {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+   &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+
+}

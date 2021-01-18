@@ -439,7 +439,22 @@ a {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/hero_tablet-1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero_tablet-1x.jpg);
+    background-size: 768px 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/hero_desk-1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero_desk-1x.jpg);
     background-size: cover;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/hero_desk-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero_desk-2x.jpg);
   }
 }
 
@@ -489,6 +504,23 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 452px;
+    padding-bottom: 452px;
+  }
+}
+
 .hero .container-title {
   margin-bottom: 30px;
 }
@@ -501,6 +533,13 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .container-title .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .container-link .hero-link {
@@ -619,6 +658,16 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .object-list-item {
+    width: 50%;
+    width: 270px;
+  }
+  .object-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (min-width: 200px) and (max-width: 1199px) {
   .lessons {
     display: none;
@@ -676,6 +725,12 @@ a {
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+.lessons .container .lessons-list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .command {
@@ -832,6 +887,25 @@ a {
   .command-list-item {
     width: 50%;
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command .container {
+    padding-bottom: 94px;
+  }
+  .command .command-main-title {
+    margin-bottom: 50px;
+    padding-top: 94px;
+  }
+  .command-list-item {
+    width: 270px;
+  }
+  .command-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .command-list-item:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 
@@ -1326,6 +1400,10 @@ a[href^="https://goo.gl/maps/AcYd8yKNyFsXZPgV9"] {
   }
 }
 
+.container-form-modal {
+  height: 609px;
+}
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -1344,6 +1422,7 @@ a[href^="https://goo.gl/maps/AcYd8yKNyFsXZPgV9"] {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   width: 450px;
+  height: 609px;
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1352,6 +1431,12 @@ a[href^="https://goo.gl/maps/AcYd8yKNyFsXZPgV9"] {
   transition: -webkit-transform 500ms cubic-bezier(1, -0.09, 0.37, 0.83) 500ms;
   transition: transform 500ms cubic-bezier(1, -0.09, 0.37, 0.83) 500ms;
   transition: transform 500ms cubic-bezier(1, -0.09, 0.37, 0.83) 500ms, -webkit-transform 500ms cubic-bezier(1, -0.09, 0.37, 0.83) 500ms;
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop .modal {
+    top: 41%;
+  }
 }
 
 .backdrop.is-hidden {
