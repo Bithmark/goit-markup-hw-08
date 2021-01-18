@@ -58,3 +58,20 @@
     }
 }  
   
+
+@media screen and(min-width:768px) {
+
+  .company-clients .container .company-clients-list{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .company-item {
+    width: 226px;
+  }
+
+  .company-item .company-link {
+    width: 226px;
+  }
+
+}

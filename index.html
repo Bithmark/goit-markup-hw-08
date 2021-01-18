@@ -17,7 +17,7 @@
 <body>
 
     <!--Шапка-->
-    <header class="header">
+      <header class="header">
         <div class="container ">
 
             <nav class="navigation">
@@ -77,7 +77,7 @@
     <!-- Герой -->
     <main>
 
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
 
                 <div class="container-title">
@@ -89,14 +89,15 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
 
-        <!--Цели-->
-        <section class="object">
+        <!-- Цели -->
+        <!-- <section class="object">
             <div class="container">
                 <h2 class="visually-hidden">Цели</h2>
                 <ul class="object-list">
-                    <li class="object-list-item margin">
+                    <div class="container-pack">
+                <li class="object-list-item margin">
                         <div class="container-object">
                             <svg class="object-link" width="70px" height="70px">
                                 <use href="./images/sprite.svg#icon-antenna"></use>
@@ -144,13 +145,15 @@
                             плановых заданий.
                         </p>
                     </li>
+                    </div>
+
                 </ul>
             </div>
 
-        </section>
+        </section> -->
 
         <!--Чем мы занимаемся-->
-        <section class="lessons">
+        <!-- <section class="lessons"> 
             <div class="container">
                 <h2 class="lessons-title">Чем мы занимаемся</h2>
 
@@ -178,15 +181,19 @@
                 </ul>
             </div>
 
-        </section>
+        </section> -->
 
         <!--Наша команда-->
-        <section class="command">
+        <section class="command visually-hidden">
 
             <div class="container">
                 <h2 class="command-main-title">Наша команда</h2>
+                
                 <ul class="command-list">
-                    <li class="command-list-item">
+
+                    <div class="container-command">
+                        
+                        <li class="command-list-item">
 
                         <picture class="command__list-picture">
                             <!-- <source srcset="./images/about/about-img-desktop-01.webp 1x, ./images/about/about-img-desktop-01@2x.webp 2x"
@@ -197,7 +204,7 @@
                                 media="(min-width: 768px)" type="image/webp">
                             <source srcset="../images/mobile/man 1/img1-1х.jpg 1x, ../images/mobile/man 1/img1-2х.jpg 2x"
                                 media="(min-width: 768px)">
-                            <img class="about__list-img" src="../images/mobile/man 1/img1-1х.jpg" alt="человек в очках" />
+                            <img class="command-list-img" src="../images/mobile/man 1/img1-1х.jpg" alt="человек в очках" />
                         </picture>
 
                         <div class="container-profession">
@@ -240,14 +247,14 @@
                     <li class="command-list-item">
                                         <picture class="command__list-picture">
                                             <!-- <source srcset="./images/about/about-img-desktop-01.webp 1x, ./images/about/about-img-desktop-01@2x.webp 2x"
-                                                                        media="(min-width: 1200px)" type="image/webp">
-                                                                    <source srcset="./images/about/about-img-desktop-01.jpg 1x, ./images/about/about-img-desktop-01@2x.jpg 2x"
-                                                                        media="(min-width: 1200px)"> -->
+                                             media="(min-width: 1200px)" type="image/webp">
+                                             <source srcset="./images/about/about-img-desktop-01.jpg 1x, ./images/about/about-img-desktop-01@2x.jpg 2x"
+                                            media="(min-width: 1200px)"> -->
                                             <source srcset="../images/mobile/man 2/img2-1х.webp 1x, ../images/mobile/man 2/img2-2х.webp 2x"
                                                 media="(min-width: 768px)" type="image/webp">
                                             <source srcset="../images/mobile/man 2/img2-1х.jpg 1x, ../images/mobile/man 2/img2-2х.jpg 2x"
                                                 media="(min-width: 768px)">
-                                            <img class="about__list-img" src="../images/mobile/man 2/img2-1х.jpg" alt="девушка в очках" />
+                                            <img class="command-list-img" src="../images/mobile/man 2/img2-1х.jpg" alt="девушка в очках" />
                                         </picture>
                         <div class="container-profession">
                             <h3 class="command-title">Ольга Репина</h3>
@@ -296,7 +303,7 @@
                                                 media="(min-width: 768px)" type="image/webp">
                                             <source srcset="../images/mobile/man 3/img3-1х.jpg 1x, ../images/mobile/man 3/img3-2х.jpg 2x"
                                                 media="(min-width: 768px)">
-                                            <img class="about__list-img" src="../images/mobile/man 3/img3-1х.jpg" alt="парень с бородой" />
+                                            <img class="command-list-img" src="../images/mobile/man 3/img3-1х.jpg" alt="парень с бородой" />
                         <div class="container-profession">
                             <h3 class="command-title">Николай Тарасов</h3>
                             <p class="command-profession">Marketing</p>
@@ -344,7 +351,7 @@
                                                 media="(min-width: 768px)" type="image/webp">
                                             <source srcset="../images/mobile/man 4/img4-1х.jpg 1x, ../images/mobile/man 4/img4-2х.jpg 2x"
                                                 media="(min-width: 768px)">
-                                            <img class="about__list-img" src="../images/mobile/man 4/img4-1х.jpg" alt="девушка в очках" />
+                                            <img class="command-list-img" src="../images/mobile/man 4/img4-1х.jpg" alt="девушка в очках" />
                         <div class="container-profession">
                             <h3 class="command-title">Михаил Ермаков</h3>
                             <p class="command-profession">UI Designer</p>
@@ -382,6 +389,8 @@
                             </div>
                         </div>
                     </li>
+                    </div>
+ 
                 </ul>
             </div>
 
@@ -390,12 +399,14 @@
 
         <!-- Clients -->
 
-        <section class="company-clients">
+        <!-- <section class="company-clients">
 
             <div class="container">
                 <h2 class="main_title">Постоянные клиенты</h2>
 
                 <ul class="company-clients-list">
+
+        
                     <li class="company-item">
                         <a href="#" class="company-link">
                             <svg class="company-svg" width="44" height="50">
@@ -437,21 +448,24 @@
                                 <use href="./images/sprite.svg#icon-client-6"></use>
                             </svg>
                         </a>
-                    </li>
+                    </li> 
+
                 </ul>
 
             </div>
 
-        </section>
+        </section> -->
 
     </main>
 
       <!-- Футер -->
-    <footer class="footer">
+
+    <!-- <footer class="footer">
 
         <div class="container">
 
-            <div class="container-primary">
+          <div class="container-all">
+                        <div class="container-primary">
 
                 <a href="#" class="logo-footer"><span class="logo">Web</span>Studio</a>
 
@@ -509,6 +523,9 @@
                     </li>
                 </ul>
             </div>
+          </div>
+
+  
 
             <div class="container-form">
 
@@ -534,7 +551,7 @@
             </div>
         </div>
 
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">

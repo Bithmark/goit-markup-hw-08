@@ -1,9 +1,15 @@
     
+.container-post {
+  padding-top: 30px;
+}
+
+
     .poster-list {
-      display: flex;
-      flex-wrap: wrap;
+      // display: flex;
+      // flex-wrap: wrap;
       // justify-content: space-between;
       padding-bottom: 60px;
+      padding-top: 30px;
 
       .poster-list-item {
       border: 1px solid #eeeeee;
@@ -89,3 +95,21 @@
     }
     
  
+.command-list-img{
+  width: 100%;
+}
+
+
+@media screen and (min-width:768px) {
+
+  .container-poster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .poster-list .poster-list-item{
+    width: 354px;
+  }
+  
+}

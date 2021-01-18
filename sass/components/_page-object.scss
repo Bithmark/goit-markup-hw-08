@@ -1,4 +1,4 @@
-    
+
     .object-list-title, .lessons-text {
     font-weight: 700;
     font-size: 14px;
@@ -17,7 +17,7 @@
     color: var(--grey-color);
   }
     
-.object-list{
+  .object-list{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,13 +26,18 @@
   padding-bottom: 60px;
 }  
 
-.object-list-item{
+    .object-list-item{
+
       &:not(:last-child) {
        margin-bottom: 30px;
     }
+
 }
 
+
+
     .container-object{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,9 +46,10 @@
     background: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
+
     }
  
-  .object-list-title {
+    .object-list-title {
     margin-bottom: 10px;
   }
 
@@ -53,3 +59,21 @@
       justify-content: center;
     }
     
+    @media screen and(min-width:768px) {
+
+      .container-pack {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .object-list-item {
+        width: 50%;
+        width: 354px;
+      }
+
+    }
+
+
+
+  
