@@ -202,3 +202,60 @@ background-color: #2f303a;
   }
   
 }
+
+
+@media screen and(min-width:1200px) {
+  
+  .footer .container{
+    height: 252px;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .container-all {
+    width: 507px;
+  }
+    
+  .container-secondary{
+    padding-bottom: 0px;
+  }
+
+  .container-button {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 12px;
+    width: 200px;
+  }
+
+  .container-form{
+    margin-left: 93px;
+    margin-top: 72px;
+    width: 570px;
+  }
+
+  .footer-modal-input{
+    width: 370px;
+    height: 50px;
+  }
+
+  .footer-modal-form {
+    flex-direction: row;
+  }
+
+  .join {
+    justify-content: flex-start;
+  }
+
+  .container-primary {
+
+     padding-bottom: 0px; 
+     padding-top: 0px;
+     width: 231px;
+     margin-right: 70px;
+  }
+
+  .address-list-link{
+    justify-content: flex-start;
+  }
+}

@@ -646,9 +646,43 @@ transition: var(--time-color);
 // }
 
 
+// @media screen and (min-width: 1200px) {
+
+//    .navigation-list-information {
+//         margin-left: 305px;
+//    }
+// }
+
+@media screen and (min-width: 1200px) {
+
+   .navigation-list-information {
+        margin-left: 305px;
+   }
 
 
+   .container-navigation-right{
+     padding-top: 0px;
+     display: flex;
+   }
 
+
+   .navigation .logo {
+     margin-right: 93px;
+   }
+
+   .navigation-list-item-link {
+     margin-bottom: 0px;
+   }
+
+   .container-mail{
+     margin-right: 30px;
+   }
+
+   .menu-container {
+     display: flex;
+    align-items: baseline;
+   }
+}
 
 
 
