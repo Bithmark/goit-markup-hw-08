@@ -6,6 +6,11 @@
 
     display: flex;
     justify-content: flex-start;
+    height: 91px;
+
+    @media screen and(min-width:768px) {
+      height: 38px;
+    }
 
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -13,6 +18,11 @@
 
     @media screen and(min-width:768px) {
       justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    @media screen and(min-width:1200px) {
+      margin-top: 50px;
     }
   }
 
@@ -26,24 +36,6 @@
     }
     }
 
-
-// .main-button .container {
-//     margin-top: 94px;
-//   }
-  
-//   .button-list {
-//     display: flex;
-//     justify-content: center;
-//     margin-bottom: 50px;
-
-//   .button-list-item{
-
-//     &:not(:last-child) {
-//          margin-right: 10px;
-
-//     }
-//     }
-   
     .button-active {
     font-weight: 500;
     font-size: 16px;

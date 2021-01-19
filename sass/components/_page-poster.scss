@@ -9,7 +9,7 @@
       // flex-wrap: wrap;
       // justify-content: space-between;
       padding-bottom: 60px;
-      padding-top: 30px;
+      // padding-top: 30px;
 
       .poster-list-item {
       border: 1px solid #eeeeee;
@@ -115,14 +115,18 @@
 }
 
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
+
+.button-list{
+  margin-top: 94px;
+}
 
   .poster-list .poster-list-item{
     width: 370px;
   }
 
   .poster-list {
-    padding-top: 50px;
+    // padding-top: 50px;
     padding-bottom: 94px;
   }
   
